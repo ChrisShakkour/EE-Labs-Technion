@@ -1,0 +1,330 @@
+xmsim(64): 20.09-s001: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+xmsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+
+-------------------------------------
+Relinquished control to SimVision...
+xcelium> 
+xcelium> database -open waves -into waves.shm -default
+Created default SHM database waves
+xcelium> probe -create -shm Top_test.Top_U1.genblk1[0].I_pooling.En Top_test.Top_U1.genblk1[0].I_pooling.clk Top_test.Top_U1.genblk1[0].I_pooling.convResult Top_test.Top_U1.genblk1[0].I_pooling.convolution Top_test.Top_U1.genblk1[0].I_pooling.pooledPixels Top_test.Top_U1.genblk1[0].I_pooling.pooledReg Top_test.Top_U1.genblk1[1].I_pooling.En Top_test.Top_U1.genblk1[1].I_pooling.clk Top_test.Top_U1.genblk1[1].I_pooling.convResult Top_test.Top_U1.genblk1[1].I_pooling.convolution Top_test.Top_U1.genblk1[1].I_pooling.pooledPixels Top_test.Top_U1.genblk1[1].I_pooling.pooledReg
+Created probe 1
+xcelium> run
+     SYNCHRONOUS DUAL PORT RAM VERILOG BEHAVIOURAL MODEL 
+
+                  Synopsys Inc.
+ 
+ 
+ Polaris INFO : Reccommending to use with +ieee +defparam +pulse_x/0
+                +pulse_r/0 +pathpulse +define+verbose_<X> options   
+
+ Error filtering options description :  
+ +define+verbose_0 : X transitions filtered; no messages printed    
+ +define+verbose_1 : X transitions filtered; error messages printed
+ +define+verbose_2 : no X transtions filtering; no messages printed
+ +define+verbose_3 : default : no X filtering; err messages printed 
+
+ Add +define+nobanner in order not to display these header messages 
+ 
+     SYNCHRONOUS DUAL PORT RAM VERILOG BEHAVIOURAL MODEL 
+
+                  Synopsys Inc.
+ 
+ 
+ Polaris INFO : Reccommending to use with +ieee +defparam +pulse_x/0
+                +pulse_r/0 +pathpulse +define+verbose_<X> options   
+
+ Error filtering options description :  
+ +define+verbose_0 : X transitions filtered; no messages printed    
+ +define+verbose_1 : X transitions filtered; error messages printed
+ +define+verbose_2 : no X transtions filtering; no messages printed
+ +define+verbose_3 : default : no X filtering; err messages printed 
+
+ Add +define+nobanner in order not to display these header messages 
+ 
+     SYNCHRONOUS DUAL PORT RAM VERILOG BEHAVIOURAL MODEL 
+
+                  Synopsys Inc.
+ 
+ 
+ Polaris INFO : Reccommending to use with +ieee +defparam +pulse_x/0
+                +pulse_r/0 +pathpulse +define+verbose_<X> options   
+
+ Error filtering options description :  
+ +define+verbose_0 : X transitions filtered; no messages printed    
+ +define+verbose_1 : X transitions filtered; error messages printed
+ +define+verbose_2 : no X transtions filtering; no messages printed
+ +define+verbose_3 : default : no X filtering; err messages printed 
+
+ Add +define+nobanner in order not to display these header messages 
+ 
+0.0 : Top_test.Top_U1.WMEM_U2.dpram32x32_cb_dualram.Port2.Warning : OEB2 is unknown.
+0.0 : Top_test.Top_U1.WMEM_U2.dpram32x32_cb_dualram.Port1.Warning : OEB1 is unknown.
+0.0 : Top_test.Top_U1.WMEM_U1.dpram32x32_cb_dualram.Port2.Warning : OEB2 is unknown.
+0.0 : Top_test.Top_U1.WMEM_U1.dpram32x32_cb_dualram.Port1.Warning : OEB1 is unknown.
+0.0 : Top_test.Top_U1.KMEM_U1.dpram32x32_cb_dualram.Port2.Warning : OEB2 is unknown.
+0.0 : Top_test.Top_U1.KMEM_U1.dpram32x32_cb_dualram.Port1.Warning : OEB1 is unknown.
+0.0 : Top_test.Top_U1.WMEM_U2.dpram32x32_cb_dualram.Port2.Warning : Address2 is unknown - cannot access memory.
+0.0 : Top_test.Top_U1.WMEM_U2.dpram32x32_cb_dualram.Port1.Warning : Address1 is unknown - cannot access memory.
+0.0 : Top_test.Top_U1.WMEM_U1.dpram32x32_cb_dualram.Port2.Warning : Address2 is unknown - cannot access memory.
+0.0 : Top_test.Top_U1.WMEM_U1.dpram32x32_cb_dualram.Port1.Warning : Address1 is unknown - cannot access memory.
+0.0 : Top_test.Top_U1.KMEM_U1.dpram32x32_cb_dualram.Port2.Warning : Address2 is unknown - cannot access memory.
+0.0 : Top_test.Top_U1.KMEM_U1.dpram32x32_cb_dualram.Port1.Warning : Address1 is unknown - cannot access memory.
+0.0 : Top_test.Top_U1.WMEM_U1.dpram32x32_cb_dualram.Warning : Write/Write conflict. Writing X.
+0.0 : Top_test.Top_U1.WMEM_U2.dpram32x32_cb_dualram.Warning : Write/Write conflict. Writing X.
+0.0 : Top_test.Top_U1.KMEM_U1.dpram32x32_cb_dualram.Warning : Write/Write conflict. Writing X.
+>>>[               50000] Top_U1.NNC_U1.CUR_ST 0
+>>>[               50000] Top_U1.En 0
+>>>[               50000] Top_U1.KMEM_ADD1 00
+>>>[               50000] Top_U1.KMEM_ADD2 00
+>>>[               50000] Top_U1.WMEM_ADD1 00
+>>>[               50000] Top_U1.WMEM_ADD2 00
+>>>[               50000] Top_U1.KMEM_WEB1 1
+>>>[               50000] Top_U1.KMEM_WEB2 1
+>>>[               50000] Top_U1.WMEM_WEB1 1
+>>>[               50000] Top_U1.WMEM_WEB2 1
+>>>[              150000] Top_U1.NNC_U1.CUR_ST 0
+
+Warning!  Timing violation
+           $recovery( negedge CEB1 &&& en_write1read2:20 NS, negedge CEB2 &&& en_write1read2:20 NS,  0.9462 : 946200 FS );
+            File: ./dpram32x32_cb.v, line = 528
+           Scope: Top_test.Top_U1.KMEM_U1
+            Time: 20 NS
+
+
+Warning!  Timing violation
+           $recovery( negedge CEB2 &&& en_write1read2:20 NS, negedge CEB1 &&& en_write1read2:20 NS,  0.9462 : 946200 FS );
+            File: ./dpram32x32_cb.v, line = 531
+           Scope: Top_test.Top_U1.KMEM_U1
+            Time: 20 NS
+
+20.00 : Simultaneous read/write to the same address.
+
+>>>[              250000] Top_U1.NNC_U1.CUR_ST 1
+>>>[              250000] Top_U1.WMEM_ADD2 01
+>>>[              250000] Top_U1.KMEM_WEB1 0
+>>>[              250000] Top_U1.WMEM_WEB1 0
+>>>[              250000] Top_U1.WMEM_WEB2 0
+>>>[              250000] Top_U1.KR_DATA_O xxxxxxxx01ffff01
+>>>[              250000] Top_U1.W1_DATA_O1 01ffff01
+>>>[              250000] Top_U1.W1_DATA_O2 ff0101ff
+>>>[              250000] Top_U1.W2_DATA_O1 ff0101ff
+>>>[              250000] Top_U1.W2_DATA_O2 01ffff01
+
+Warning!  Timing violation
+           $recovery( negedge CEB1 &&& en_write1read2:30 NS, negedge CEB2 &&& en_write1read2:30 NS,  0.9462 : 946200 FS );
+            File: ./dpram32x32_cb.v, line = 528
+           Scope: Top_test.Top_U1.KMEM_U1
+            Time: 30 NS
+
+
+Warning!  Timing violation
+           $recovery( negedge CEB2 &&& en_write1read2:30 NS, negedge CEB1 &&& en_write1read2:30 NS,  0.9462 : 946200 FS );
+            File: ./dpram32x32_cb.v, line = 531
+           Scope: Top_test.Top_U1.KMEM_U1
+            Time: 30 NS
+
+30.00 : Simultaneous read/write to the same address.
+
+>>>[              350000] Top_U1.NNC_U1.CUR_ST 1
+>>>[              350000] Top_U1.KMEM_ADD1 01
+>>>[              350000] Top_U1.KMEM_ADD2 01
+>>>[              350000] Top_U1.WMEM_ADD1 02
+>>>[              350000] Top_U1.WMEM_ADD2 03
+>>>[              350000] Top_U1.KR_DATA_O xxxxxxxxff0101ff
+>>>[              350000] Top_U1.W1_DATA_O1 ffffffff
+>>>[              350000] Top_U1.W1_DATA_O2 01ffff01
+>>>[              350000] Top_U1.W2_DATA_O2 ffffffff
+>>>[              450000] Top_U1.NNC_U1.CUR_ST 2
+>>>[              450000] Top_U1.En 1
+>>>[              450000] Top_U1.KMEM_ADD1 00
+>>>[              450000] Top_U1.WMEM_ADD1 00
+>>>[              450000] Top_U1.WMEM_ADD2 00
+>>>[              450000] Top_U1.KMEM_WEB1 1
+>>>[              450000] Top_U1.WMEM_WEB1 1
+>>>[              450000] Top_U1.WMEM_WEB2 1
+>>>[              450000] Top_U1.KR_DATA_O ff0101ff01ffff01
+>>>[              450000] Top_U1.W1_DATA_O1 01ffff01
+>>>[              450000] Top_U1.W2_DATA_O2 ff0101ff
+>>>[              450000] pooledPixelArray xXxXxXxX xXxXxXxX
+>>>[              550000] Top_U1.NNC_U1.CUR_ST 2
+>>>[              550000] Top_U1.En 0
+>>>[              550000] Top_U1.WMEM_ADD1 01
+>>>[              550000] Top_U1.WMEM_ADD2 01
+>>>[              550000] Top_U1.W1_DATA_O1 ff0101ff
+>>>[              550000] Top_U1.W1_DATA_O2 ff0101ff
+>>>[              550000] Top_U1.W2_DATA_O1 01ffff01
+>>>[              550000] Top_U1.W2_DATA_O2 01ffff01
+>>>[              550000] convResult fc04
+>>>[              650000] Top_U1.NNC_U1.CUR_ST 2
+>>>[              650000] Top_U1.WMEM_ADD1 02
+>>>[              650000] Top_U1.WMEM_ADD2 02
+>>>[              650000] Top_U1.W1_DATA_O1 ffffffff
+>>>[              650000] Top_U1.W1_DATA_O2 ffffffff
+>>>[              650000] Top_U1.W2_DATA_O1 ff0101ff
+>>>[              650000] Top_U1.W2_DATA_O2 ff0101ff
+>>>[              650000] convResult 04fc
+>>>[              750000] Top_U1.NNC_U1.CUR_ST 2
+>>>[              750000] Top_U1.WMEM_ADD1 03
+>>>[              750000] Top_U1.WMEM_ADD2 03
+>>>[              750000] Top_U1.W1_DATA_O1 01ffff01
+>>>[              750000] Top_U1.W1_DATA_O2 01ffff01
+>>>[              750000] Top_U1.W2_DATA_O1 ffffffff
+>>>[              750000] Top_U1.W2_DATA_O2 ffffffff
+>>>[              850000] Top_U1.NNC_U1.CUR_ST 2
+>>>[              850000] Top_U1.En 1
+>>>[              850000] Top_U1.WMEM_ADD1 00
+>>>[              850000] Top_U1.WMEM_ADD2 00
+>>>[              850000] Top_U1.W2_DATA_O1 ff0101ff
+>>>[              850000] Top_U1.W2_DATA_O2 ff0101ff
+>>>[              850000] convResult fc04
+>>>[              850000] pooledPixelArray ff0101ff 01ffff01
+>>>[              950000] Top_U1.NNC_U1.CUR_ST 2
+>>>[              950000] Top_U1.En 0
+>>>[              950000] Top_U1.WMEM_ADD1 01
+>>>[              950000] Top_U1.WMEM_ADD2 01
+>>>[              950000] Top_U1.W1_DATA_O1 ff0101ff
+>>>[              950000] Top_U1.W1_DATA_O2 ff0101ff
+>>>[              950000] Top_U1.W2_DATA_O1 01ffff01
+>>>[              950000] Top_U1.W2_DATA_O2 01ffff01
+>>>[              950000] convResult 04fc
+>>>[             1050000] Top_U1.NNC_U1.CUR_ST 2
+>>>[             1050000] Top_U1.WMEM_ADD1 02
+>>>[             1050000] Top_U1.WMEM_ADD2 02
+>>>[             1050000] Top_U1.W1_DATA_O1 ffffffff
+>>>[             1050000] Top_U1.W1_DATA_O2 ffffffff
+>>>[             1050000] Top_U1.W2_DATA_O1 ff0101ff
+>>>[             1050000] Top_U1.W2_DATA_O2 ff0101ff
+>>>[             1050000] convResult fc04
+>>>[             1150000] Top_U1.NNC_U1.CUR_ST 2
+>>>[             1150000] Top_U1.WMEM_ADD1 03
+>>>[             1150000] Top_U1.WMEM_ADD2 03
+>>>[             1150000] Top_U1.W1_DATA_O1 01ffff01
+>>>[             1150000] Top_U1.W1_DATA_O2 01ffff01
+>>>[             1150000] Top_U1.W2_DATA_O1 ffffffff
+>>>[             1150000] Top_U1.W2_DATA_O2 ffffffff
+>>>[             1250000] Top_U1.NNC_U1.CUR_ST 2
+>>>[             1250000] Top_U1.En 1
+>>>[             1250000] Top_U1.WMEM_ADD1 00
+>>>[             1250000] Top_U1.WMEM_ADD2 00
+>>>[             1250000] Top_U1.W2_DATA_O1 ff0101ff
+>>>[             1250000] Top_U1.W2_DATA_O2 ff0101ff
+>>>[             1250000] convResult 04fc
+>>>[             1250000] pooledPixelArray 01ffff01 ff0101ff
+>>>[             1350000] Top_U1.NNC_U1.CUR_ST 2
+>>>[             1350000] Top_U1.En 0
+>>>[             1350000] Top_U1.WMEM_ADD1 01
+>>>[             1350000] Top_U1.WMEM_ADD2 01
+>>>[             1350000] Top_U1.W1_DATA_O1 ff0101ff
+>>>[             1350000] Top_U1.W1_DATA_O2 ff0101ff
+>>>[             1350000] Top_U1.W2_DATA_O1 01ffff01
+>>>[             1350000] Top_U1.W2_DATA_O2 01ffff01
+>>>[             1350000] convResult fc04
+>>>[             1450000] Top_U1.NNC_U1.CUR_ST 2
+>>>[             1450000] Top_U1.WMEM_ADD1 02
+>>>[             1450000] Top_U1.WMEM_ADD2 02
+>>>[             1450000] Top_U1.W1_DATA_O1 ffffffff
+>>>[             1450000] Top_U1.W1_DATA_O2 ffffffff
+>>>[             1450000] Top_U1.W2_DATA_O1 ff0101ff
+>>>[             1450000] Top_U1.W2_DATA_O2 ff0101ff
+>>>[             1450000] convResult 02fe
+>>>[             1550000] Top_U1.NNC_U1.CUR_ST 2
+>>>[             1550000] Top_U1.WMEM_ADD1 03
+>>>[             1550000] Top_U1.WMEM_ADD2 03
+>>>[             1550000] Top_U1.W1_DATA_O1 01ffff01
+>>>[             1550000] Top_U1.W1_DATA_O2 01ffff01
+>>>[             1550000] Top_U1.W2_DATA_O1 ffffffff
+>>>[             1550000] Top_U1.W2_DATA_O2 ffffffff
+>>>[             1650000] Top_U1.NNC_U1.CUR_ST 2
+>>>[             1650000] Top_U1.En 1
+>>>[             1650000] Top_U1.WMEM_ADD1 00
+>>>[             1650000] Top_U1.WMEM_ADD2 00
+>>>[             1650000] Top_U1.W2_DATA_O1 ff0101ff
+>>>[             1650000] Top_U1.W2_DATA_O2 ff0101ff
+>>>[             1650000] convResult fc04
+>>>[             1650000] pooledPixelArray ff0101ff 01ffff01
+>>>[             1750000] Top_U1.NNC_U1.CUR_ST 2
+>>>[             1750000] Top_U1.En 0
+>>>[             1750000] Top_U1.WMEM_ADD1 01
+>>>[             1750000] Top_U1.WMEM_ADD2 01
+>>>[             1750000] Top_U1.W1_DATA_O1 ff0101ff
+>>>[             1750000] Top_U1.W1_DATA_O2 ff0101ff
+>>>[             1750000] Top_U1.W2_DATA_O1 01ffff01
+>>>[             1750000] Top_U1.W2_DATA_O2 01ffff01
+>>>[             1750000] convResult fe02
+>>>[             1850000] Top_U1.NNC_U1.CUR_ST 2
+>>>[             1850000] Top_U1.WMEM_ADD1 02
+>>>[             1850000] Top_U1.WMEM_ADD2 02
+>>>[             1850000] Top_U1.W1_DATA_O1 ffffffff
+>>>[             1850000] Top_U1.W1_DATA_O2 ffffffff
+>>>[             1850000] Top_U1.W2_DATA_O1 ff0101ff
+>>>[             1850000] Top_U1.W2_DATA_O2 ff0101ff
+>>>[             1850000] convResult 04fc
+>>>[             1950000] Top_U1.NNC_U1.CUR_ST 2
+>>>[             1950000] Top_U1.WMEM_ADD1 03
+>>>[             1950000] Top_U1.WMEM_ADD2 03
+>>>[             1950000] Top_U1.W1_DATA_O1 01ffff01
+>>>[             1950000] Top_U1.W1_DATA_O2 01ffff01
+>>>[             1950000] Top_U1.W2_DATA_O1 ffffffff
+>>>[             1950000] Top_U1.W2_DATA_O2 ffffffff
+>>>[             2050000] Top_U1.NNC_U1.CUR_ST 2
+>>>[             2050000] Top_U1.En 1
+>>>[             2050000] Top_U1.WMEM_ADD1 00
+>>>[             2050000] Top_U1.WMEM_ADD2 00
+>>>[             2050000] Top_U1.W2_DATA_O1 ff0101ff
+>>>[             2050000] Top_U1.W2_DATA_O2 ff0101ff
+>>>[             2050000] convResult fe02
+>>>[             2150000] Top_U1.NNC_U1.CUR_ST 2
+>>>[             2150000] Top_U1.En 0
+>>>[             2150000] Top_U1.WMEM_ADD1 01
+>>>[             2150000] Top_U1.WMEM_ADD2 01
+>>>[             2150000] Top_U1.W1_DATA_O1 ff0101ff
+>>>[             2150000] Top_U1.W1_DATA_O2 ff0101ff
+>>>[             2150000] Top_U1.W2_DATA_O1 01ffff01
+>>>[             2150000] Top_U1.W2_DATA_O2 01ffff01
+>>>[             2250000] Top_U1.NNC_U1.CUR_ST 2
+>>>[             2250000] Top_U1.WMEM_ADD1 02
+>>>[             2250000] Top_U1.WMEM_ADD2 02
+>>>[             2250000] Top_U1.W1_DATA_O1 ffffffff
+>>>[             2250000] Top_U1.W1_DATA_O2 ffffffff
+>>>[             2250000] Top_U1.W2_DATA_O1 ff0101ff
+>>>[             2250000] Top_U1.W2_DATA_O2 ff0101ff
+>>>[             2350000] Top_U1.NNC_U1.CUR_ST 2
+>>>[             2350000] Top_U1.WMEM_ADD1 03
+>>>[             2350000] Top_U1.WMEM_ADD2 03
+>>>[             2350000] Top_U1.W1_DATA_O1 01ffff01
+>>>[             2350000] Top_U1.W1_DATA_O2 01ffff01
+>>>[             2350000] Top_U1.W2_DATA_O1 ffffffff
+>>>[             2350000] Top_U1.W2_DATA_O2 ffffffff
+>>>[             2450000] Top_U1.NNC_U1.CUR_ST 2
+>>>[             2450000] Top_U1.En 1
+>>>[             2450000] Top_U1.WMEM_ADD1 00
+>>>[             2450000] Top_U1.WMEM_ADD2 00
+>>>[             2450000] Top_U1.W2_DATA_O1 ff0101ff
+>>>[             2450000] Top_U1.W2_DATA_O2 ff0101ff
+>>>[             2450000] pooledPixelArray ffffffff 01010101
+>>>[             2550000] Top_U1.NNC_U1.CUR_ST 2
+>>>[             2550000] Top_U1.En 0
+>>>[             2550000] Top_U1.WMEM_ADD1 01
+>>>[             2550000] Top_U1.WMEM_ADD2 01
+>>>[             2550000] Top_U1.W1_DATA_O1 ff0101ff
+>>>[             2550000] Top_U1.W1_DATA_O2 ff0101ff
+>>>[             2550000] Top_U1.W2_DATA_O1 01ffff01
+>>>[             2550000] Top_U1.W2_DATA_O2 01ffff01
+>>>[             2650000] Top_U1.NNC_U1.CUR_ST 2
+>>>[             2650000] Top_U1.WMEM_ADD1 02
+>>>[             2650000] Top_U1.WMEM_ADD2 02
+>>>[             2650000] Top_U1.W1_DATA_O1 ffffffff
+>>>[             2650000] Top_U1.W1_DATA_O2 ffffffff
+>>>[             2650000] Top_U1.W2_DATA_O1 ff0101ff
+>>>[             2650000] Top_U1.W2_DATA_O2 ff0101ff
+>>>[             2750000] Top_U1.NNC_U1.CUR_ST 2
+>>>[             2750000] Top_U1.WMEM_ADD1 03
+>>>[             2750000] Top_U1.WMEM_ADD2 03
+>>>[             2750000] Top_U1.W1_DATA_O1 01ffff01
+>>>[             2750000] Top_U1.W1_DATA_O2 01ffff01
+>>>[             2750000] Top_U1.W2_DATA_O1 ffffffff
+>>>[             2750000] Top_U1.W2_DATA_O2 ffffffff
+Simulation complete via $finish(1) at time 280 NS + 0
+./Top4_test.sv:35 #250 $finish;
+xcelium> ^C
+xcelium> exit
