@@ -9,15 +9,16 @@ clc;
 
 %%%%%%%%%%%%%%%%%%%
 %Insert image file number here (imageNumber>0):
-imageNumber = 1;
+imageNumber = 5;
 %%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%
 % workMode - 'mask' shows masks, 'color' shows color images.
 % Do NOT change to 'color' until ALL your masks are final.
-workMode = 'mask';
+workMode = 'color';
 %%%%%%%%%%%%%%%%%%%
-
+%bwpropfilt
+%imfil
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % The rest of the code is automatic. Please do not change. %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

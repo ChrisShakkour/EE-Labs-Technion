@@ -43,7 +43,7 @@ disp(T7b);
 im1 = imread('shapes.jpg');
 
 % Change disk size here (the second argument)
-SE5 = strel('disk',[],8);               
+SE5 = strel('disk',20,8);               
 
 eroded = imerode(im1,SE5); 
 final = imdilate(eroded,SE5);
@@ -54,22 +54,66 @@ subplot(223); imshow(eroded,[]); title('Eroded Image');
 subplot(224); imshow(final,[]); title('Circles');
 
 %% Item 4
-
 % Insert your code here
+im = imread('pieces.png');
+figure(1); 
+subplot(211); imshow(im); title('pieces');
+Thresh = [140];
+bw = im<Thresh;
+Percent = 100*nnz(bw)/numel(bw);
+subplot(212); imshow(bw,[]); title(['Threshold = ',num2str(Thresh),', Percent = ',num2str(round(Percent,2)),'%']);
+
+% Change disk size here (the second argument)
+SE5 = strel('line',11,8);               
+eroded = imerode(bw,SE5); 
+final = imdilate(eroded,SE5);
+figure(2); set(gcf,'WindowState','maximized');
+subplot(221); imshow(im,[]); title('Original Image');
+subplot(223); imshow(eroded,[]); title('Eroded Image');
+subplot(224); imshow(final,[]); title('Circles');
+subplot(222); imshow(bw,[]); title('Binary Image');
+
 
 %% Item 5
 
 im2 = imread('rice.png');
-% Insert your code here
+figure(1); 
+subplot(211); imshow(im2); title('rice');
+Thresh = [130];
+bw = im2>Thresh;
+Percent = 100*nnz(bw)/numel(bw);
+subplot(212); imshow(bw,[]); title(['Threshold = ',num2str(Thresh),', Percent = ',num2str(round(Percent,2)),'%']);
+
+
+% Change disk size here (the second argument)
+SE5 = strel('disk',6,8);               
+eroded = imerode(im2,SE5); 
+
+final = im2-eroded;
+figure(2); set(gcf,'WindowState','maximized');
+subplot(221); imshow(im2,[]); title('Original Image');
+subplot(223); imshow(eroded,[]); title('Eroded Image');
+subplot(224); imshow(final,[]); title('Subtract Image');
+subplot(222); imshow(bw,[]); title('Binary Image');
 
 %% Item 6
 
 % Insert your code here
+im2 = imread('rice.png');
+figure(1); 
+subplot(211); imshow(im2); title('rice');
+Thresh = [150];
+bw = im2>Thresh;
+Percent = 100*nnz(bw)/numel(bw);
+subplot(211); imshow(bw,[]); title(['Threshold = ',num2str(Thresh),', Percent = ',num2str(round(Percent,2)),'%']);
+
 % Display histograms similarly to previous sections
+subplot(212); bar(imhist(im2));
+
 
 % Change code here
-Lower = [];                          
-Upper = [];                          
+Lower = 60;                          
+Upper = 230;                          
 
 bw_modified=bwpropfilt(bw,'Area',[Lower Upper]);
 CC = bwconncomp(bw_modified);

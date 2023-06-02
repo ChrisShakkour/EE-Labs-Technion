@@ -12,17 +12,21 @@ im = imread('toucan.tif');
 figure(1); imshow(im); title('Toucan');
 imfinfo('toucan.tif')
 
+
 %% Item 2
 
-% Insert your code here
+minval=min(min(im))
+maxval=max(max(im))
+meanval=mean(mean(im))
 
 %% Item 3
 
-% Insert your code here
+sum(sum(im==18))
 
 %% Item 4
 
-% Insert your code here
+L=im(170,:)
+plot(L)
 
 %% Item 5
 
@@ -31,7 +35,7 @@ subplot(121); bar(imhist(im));
 ylim([0 3000]); title('Toucan Histogram');
 
 % Change code here
-std_n = [];							               
+std_n = [15];							               
 
 noise = std_n*randn(size(im));  
 im_n = uint8(double(im)+noise);
@@ -44,4 +48,7 @@ ylim([0 3000]); title('Noisy Toucan Histogram');
 
 wh = imread('whitehouse.tif');
 figure(5); imshow(wh); title('White House');
+wh(wh>225)=0
+figure(6); imshow(wh); title('Black House');
+
 % Insert your code here

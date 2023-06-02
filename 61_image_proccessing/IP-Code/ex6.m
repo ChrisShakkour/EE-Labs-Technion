@@ -19,6 +19,7 @@ figure(3); imshow(imedge,[]); title('SOBEL, Thresh=0.09'); set(gcf,'WindowState'
 imedge = edge(im,'SOBEL',0.2,'both');
 figure(4); imshow(imedge,[]); title('SOBEL, Thresh=0.2'); set(gcf,'WindowState','maximized');
 
+
 %% Item 2
 
 imedge = edge(im,'CANNY',0.35,0.1);
@@ -43,4 +44,6 @@ figure(10); imshow(imedge,[]); title('CANNY'); set(gcf,'WindowState','maximized'
 std_n = 40;
 noise = std_n*randn(size(im));	
 im_n = uint8(double(im)+noise);
-% Insert your code here
+imedge = edge(im,'CANNY',0.25,1);
+figure(11); imshow(imedge,[]); title('CANNY'); set(gcf,'WindowState','maximized');
+

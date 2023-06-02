@@ -9,26 +9,35 @@ clc;
 %% Item 1
 
 im = imread('rice.png');
-% Insert your code here
-% Display histograms similarly to previous exercises
+figure(1); 
+subplot(211); imshow(im); title('Rice');
+subplot(212); bar(imhist(im));
 
 %% Item 2
 
 % Change code here
-Thresh = [];
+Thresh = [90];
 
 bw = im>Thresh;
 Percent = 100*nnz(bw)/numel(bw);
-figure(2); imshow(bw,[]); title(['Threshold = ',num2str(Thresh),', Percent = ',num2str(round(Percent,2)),'%']);
-% Insert your code here
+figure(2);
+imshow(bw,[]); title(['Threshold = ',num2str(Thresh),', Percent = ',num2str(round(Percent,2)),'%']);
+%subplot(212); bar(imhist(bw));
 
 %% Item 3
 
-% Insert your code here
+im = imread('pieces.png');
+figure(1); 
+subplot(211); imshow(im); title('Rice');
+
+Thresh = [200];
+bw = im<Thresh;
+Percent = 100*nnz(bw)/numel(bw);
+subplot(212); imshow(bw,[]); title(['Threshold = ',num2str(Thresh),', Percent = ',num2str(round(Percent,2)),'%']);
 
 %% Item 4
 
-CC = bwconncomp(pbw);
+CC = bwconncomp(bw);
 labels = labelmatrix(CC);
 cmap = rand(1000,3);
 figure(100); set(gcf,'WindowState','maximized'); 
